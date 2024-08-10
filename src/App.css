@@ -1,0 +1,70 @@
+body {
+    box-sizing: border-box;
+    background-color: black;
+    overflow: none;
+    color: white;
+}
+
+.btn-container{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: rgba(256, 256, 256, .6);
+    color: white;
+    height: 6vh;
+    width: 200px;
+    transition: scale 250ms;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.btn:first-child {
+    border-top: none;
+}
+
+.btn:last-child {
+    border-bottom: none;
+}
+
+.btn:hover {
+    scale: 110%;
+    background-color: rgba(256, 256, 256, .7);
+}
+
+.btn.active {
+    border: 3px solid white;
+    scale: 110%;
+    background-color: rgba(256, 256, 256, .7);
+}
+
+.img-container {
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    height: 60vh;
+    width: 55vw;
+    border: 2px solid black;
+    background-image: url('./assets/tiago-ferreira-Q860-qSttCs-unsplash.jpg');
+}
+
+.slider {
+    position: absolute;
+    width: 40%;
+    left: 27%;
+    bottom: 8%;
+}
+
+.slider-value {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    right: 27%;
+    bottom: 8%;
+}
